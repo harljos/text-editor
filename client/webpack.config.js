@@ -34,11 +34,13 @@ module.exports = () => {
         description: "A text editor for anything you need to write",
         start_url: "./",
         publicPath: "./",
-        icons: {
-          src: "./assets/images/logo.png",
-          sizes: [96, 128, 192, 256, 384, 512],
-          destination: path.join("assets", "icons")
-        }
+        icons: [
+          {
+            src: "./src/images/logo.png",
+            sizes: [96, 128, 192, 256, 384, 512],
+            destination: path.join("assets", "icons")
+          }
+        ]
       })
     ],
 
